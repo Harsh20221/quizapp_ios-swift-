@@ -19,6 +19,8 @@ let quest=["Four+Two Is Equal to Six ",
         currentquestion+=1;
         Questiontextcontroller.text=quest[currentquestion];
     }
+   
+   
     @IBOutlet var TrueButton: UIButton!
     @IBOutlet var FalseButton: UIButton!
     @IBOutlet var Questiontextcontroller: UILabel!

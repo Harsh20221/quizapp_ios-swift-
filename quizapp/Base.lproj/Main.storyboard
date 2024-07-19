@@ -84,8 +84,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="FalseButton" destination="tbn-vQ-GyC" id="I01-Hh-n7L"/>
                         <outlet property="Questiontextcontroller" destination="rSI-li-mhO" id="zXd-54-aA6"/>
-                        <outlet property="TrueButton" destination="tbn-vQ-GyC" id="2Ws-k3-XIF"/>
+                        <outlet property="TrueButton" destination="oVw-Hl-IRe" id="xvO-N7-pnz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

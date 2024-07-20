@@ -7,12 +7,11 @@
 //
 
 import UIKit
-
 class ViewController: UIViewController {
     var selectedanswer : String = "" /// It is important to initialise the value of the variable
     var correctanswer:Int=0;
     
-    func clearbuttoncolor() {
+    func clearbuttoncolor() { //? This clearbuttoncolor Will take care of clearing the button color after the given time
         let seconds = 0.7  ///?The Below code will change the opacity of the button back to original after 0.2 seconds
         DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
             self.TrueButton.backgroundColor=UIColor.clear
@@ -33,11 +32,9 @@ class ViewController: UIViewController {
                  Question(q: "No piece of square dry paper can be folded in half more than 7 times.", a: "False"),
                  Question(q: "Chocolate affects a dog's heart and nervous system; a few ounces are enough to kill a small dog.", a: "True") ]
     var currentquestion=0;
-
-
     @IBAction func Button(_ sender: UIButton) {
         currentquestion+=1;
-        Questiontextcontroller.text=quest[currentquestion].text; ///This will assign the QuestionController screen text equals to the Current question screen , Since we are updating current question as we are going through all the questions we are increasing current Question's Number 
+        Questiontextcontroller.text=quest[currentquestion].text; ///This will assign the QuestionController screen text equals to the Current question screen , Since we are updating current question as we are going through all the questions we are increasing current Question's Number
         if(sender.currentTitle==quest[currentquestion].answer){
             correctanswer+=1;
             sender.backgroundColor=UIColor.green ///?This is how you can set the whole ui color to a particular color when answer is  correct
@@ -49,10 +46,7 @@ class ViewController: UIViewController {
             correctanswer+=0;
             clearbuttoncolor();
         } //!!!In swift do not forget to add {} even after else statement
-        
     }
-   
-   
     @IBOutlet var TrueButton: UIButton!
     @IBOutlet var FalseButton: UIButton!
     @IBOutlet var Questiontextcontroller: UILabel!
@@ -62,12 +56,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         Questiontextcontroller.text=quest[currentquestion].text;
-
     }
-
-    
-
-    
-
 }
 

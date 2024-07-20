@@ -16,6 +16,7 @@
 		69FA84272C4AF64100BB227E /* quizappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FA84262C4AF64100BB227E /* quizappTests.swift */; };
 		69FA84312C4AF64100BB227E /* quizappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FA84302C4AF64100BB227E /* quizappUITests.swift */; };
 		69FA84332C4AF64100BB227E /* quizappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FA84322C4AF64100BB227E /* quizappUITestsLaunchTests.swift */; };
+		69FAFB282C4BE76C0089AEFE /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FAFB272C4BE76C0089AEFE /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		69FA842C2C4AF64100BB227E /* quizappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quizappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69FA84302C4AF64100BB227E /* quizappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quizappUITests.swift; sourceTree = "<group>"; };
 		69FA84322C4AF64100BB227E /* quizappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quizappUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		69FAFB272C4BE76C0089AEFE /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				69FA84182C4AF64100BB227E /* Assets.xcassets */,
 				69FA841A2C4AF64100BB227E /* LaunchScreen.storyboard */,
 				69FA841D2C4AF64100BB227E /* Info.plist */,
+				69FAFB272C4BE76C0089AEFE /* Question.swift */,
 			);
 			path = quizapp;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69FA84142C4AF64000BB227E /* ViewController.swift in Sources */,
+				69FAFB282C4BE76C0089AEFE /* Question.swift in Sources */,
 				69FA84102C4AF64000BB227E /* AppDelegate.swift in Sources */,
 				69FA84122C4AF64000BB227E /* SceneDelegate.swift in Sources */,
 			);

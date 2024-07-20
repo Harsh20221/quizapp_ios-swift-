@@ -11,6 +11,15 @@ import UIKit
 class ViewController: UIViewController {
     var selectedanswer : String = "" /// It is important to initialise the value of the variable
     var correctanswer:Int=0;
+    
+    func clearbuttoncolor() {
+        let seconds = 0.7  ///?The Below code will change the opacity of the button back to original after 0.2 seconds
+        DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+            self.TrueButton.backgroundColor=UIColor.clear
+            self.FalseButton.backgroundColor=UIColor.clear
+        }
+        
+    }
     let quest=[  Question(q: "A slug's blood is green.", a: "True"),
                  Question(q: "Approximately one quarter of human bones are in the feet.", a: "True"),
                  Question(q: "The total surface area of two human lungs is approximately 70 square metres.", a: "True"),
@@ -28,11 +37,19 @@ class ViewController: UIViewController {
 
     @IBAction func Button(_ sender: UIButton) {
         currentquestion+=1;
-        Questiontextcontroller.text=quest[currentquestion].text;
+        Questiontextcontroller.text=quest[currentquestion].text; ///This will assign the QuestionController screen text equals to the Current question screen , Since we are updating current question as we are going through all the questions we are increasing current Question's Number 
         if(sender.currentTitle==quest[currentquestion].answer){
             correctanswer+=1;
+            sender.backgroundColor=UIColor.green ///?This is how you can set the whole ui color to a particular color when answer is  correct
+         clearbuttoncolor()
+          
+            print(correctanswer)
         }
-        print(correctanswer)
+        else {sender.backgroundColor=UIColor.red;
+            correctanswer+=0;
+            clearbuttoncolor();
+        } //!!!In swift do not forget to add {} even after else statement
+        
     }
    
    
